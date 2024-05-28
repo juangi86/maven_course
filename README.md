@@ -23,3 +23,12 @@ Maven aplica este principio de las siguientes maneras:
   - `src/test/java`: Código fuente de pruebas.
   - `src/main/resources`: Recursos para el código principal.
   - `src/test/resources`: Recursos para las pruebas.
+ 
+    
+## Apache Maven has stablished ‘standards’ used by other build tools
+
+• **Maven Standard Directory Layout** - In most part adapted by other tools such as Gradle
+• **Artifact Naming** - Apache Maven helped establish how Java artifacts are named.
+• **Artifact Repositories** - Apache Maven established the structure of artifact repositories
+• **Prior to Maven** these ‘standards’ did not exist
+• **New build tools** are compatible with these ‘standards’
