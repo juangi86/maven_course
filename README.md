@@ -35,6 +35,8 @@ Maven aplica este principio de las siguientes maneras:
 
 # Troubleshooting
 ![image](https://github.com/juangi86/maven_course/assets/125272484/6ff2264e-ebcd-4f27-90ca-2f232496453c)
+![image](https://github.com/juangi86/maven_course/assets/125272484/9b172187-fb5d-43bc-beb1-2083a62ce9fa)
+
 
 
 # Maven Goals
