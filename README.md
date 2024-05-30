@@ -33,6 +33,9 @@ Maven aplica este principio de las siguientes maneras:
 • **Prior to Maven** these ‘standards’ did not exist
 • **New build tools** are compatible with these ‘standards’
 
+# Troubleshooting
+![image](https://github.com/juangi86/maven_course/assets/125272484/6ff2264e-ebcd-4f27-90ca-2f232496453c)
+
 
 # Maven Goals
 
