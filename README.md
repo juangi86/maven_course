@@ -138,5 +138,41 @@ Maven aplica este principio de las siguientes maneras:
    - **Command**: `mvn site-deploy`
    - **Use Case**: Upload the project website to a web server or hosting service.
 
+     
+# Maven Coordinates are used to identify artifacts
 
+  -  Together, they identify a ‘location’ in a Maven repository.
+    -  **groupId** - Typically unique to an organization. Often the organization’s reverse domain is used. But not always. Can be just ‘junit’.
+    -  **artifactId** - typically the project name. A descriptor for the artifact
+    -  **version** - refers to a specific version of the project.
+  -  groupId and version can be inherited from a parent POM.
+
+## Snapshots
+
+Example 3.2.1-SNAPSHOT. Tells Maven it's a development version. Maven will first check locally, then in remote repositories. It will look in the remotes once per day.
+
+## Maven Repositories
+
+  - Local: <user-home>/.m2
+  - Central: https://repo1.maven.org/maven2
+  - Remote: Other locations
+
+## Maven Wagon
+ Set up proxies
+ 
+ ![image](https://github.com/juangi86/maven_course/assets/125272484/cc6a710f-c68d-4efb-a814-1bb949f9f962)
+
+
+## Maven POM
+
+  - Must comply with maven-4.0.0.xsd
+  - .xsd is an XML Schema
+
+## Maven Lifecycles
+Maven is based on the concept of build lifecycles
+
+  - A lifecycle is a pre-defined group of build steps called **phases**
+  - Each phase can be bound to one or more plugin **goals**
+  - Keep in mind all work done in Maven is done by plugins!
+  - Lifecycles and phases provide the framework to call plugin goals in a sequence
 
