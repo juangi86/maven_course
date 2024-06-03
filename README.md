@@ -176,3 +176,5 @@ Maven is based on the concept of build lifecycles
   - Keep in mind all work done in Maven is done by plugins!
   - Lifecycles and phases provide the framework to call plugin goals in a sequence
 
+## Maven Archetypes
+Los arquetipos de Maven son plantillas de proyectos que facilitan la creación de nuevos proyectos con una estructura y configuración predefinida. En esencia, un arquetipo de Maven es un modelo que define la estructura básica y los archivos iniciales de un proyecto, ayudándote a empezar rápidamente sin tener que configurar todo desde cero.
