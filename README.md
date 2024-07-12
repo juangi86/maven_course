@@ -159,7 +159,7 @@ Example 3.2.1-SNAPSHOT. Tells Maven it's a development version. Maven will first
 
 ## Maven Wagon
  Set up proxies
- 
+
  ![image](https://github.com/juangi86/maven_course/assets/125272484/cc6a710f-c68d-4efb-a814-1bb949f9f962)
 
 
@@ -178,3 +178,17 @@ Maven is based on the concept of build lifecycles
 
 ## Maven Archetypes
 Los arquetipos de Maven son plantillas de proyectos que facilitan la creación de nuevos proyectos con una estructura y configuración predefinida. En esencia, un arquetipo de Maven es un modelo que define la estructura básica y los archivos iniciales de un proyecto, ayudándote a empezar rápidamente sin tener que configurar todo desde cero.
+
+## Maven Wrapper
+Maven Wrapper es un conjunto de archivos que se añaden a un proyecto de Maven para permitir que cualquier persona pueda ejecutar Maven sin tener que instalarlo previamente en su sistema. Estos archivos aseguran que todos los desarrolladores y los entornos de integración continua (CI) usen la misma versión de Maven para construir el proyecto, eliminando problemas de compatibilidad.
+  - Generar el Maven Wrapper:
+    Si tu proyecto no tiene Maven Wrapper, puedes generarlo con el siguiente comando:
+    mvn -N wrapper:wrapper
+    Esto añadirá los archivos necesarios a tu proyecto.
+
+  - Ejecutar comandos de Maven:
+    En lugar de usar mvn, usas ./mvnw en Unix/Linux/Mac o mvnw.cmd en Windows. Por ejemplo:
+    ./mvnw clean install
+
+## Maven Global Repositories
+Además de añadir repositorios en el pom.xml, también puedes configurar repositorios globales en el archivo settings.xml ubicado en el directorio ~/.m2/ (en Unix/Linux/Mac) o C:\Users\<tu-usuario>\.m2\ (en Windows). 
