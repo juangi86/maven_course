@@ -178,6 +178,7 @@ Maven is based on the concept of build lifecycles
 
 ## Maven Archetypes
 Los arquetipos de Maven son plantillas de proyectos que facilitan la creación de nuevos proyectos con una estructura y configuración predefinida. En esencia, un arquetipo de Maven es un modelo que define la estructura básica y los archivos iniciales de un proyecto, ayudándote a empezar rápidamente sin tener que configurar todo desde cero.
+Ejemplo: *mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4*
 
 ## Maven Wrapper
 Maven Wrapper es un conjunto de archivos que se añaden a un proyecto de Maven para permitir que cualquier persona pueda ejecutar Maven sin tener que instalarlo previamente en su sistema. Estos archivos aseguran que todos los desarrolladores y los entornos de integración continua (CI) usen la misma versión de Maven para construir el proyecto, eliminando problemas de compatibilidad.
