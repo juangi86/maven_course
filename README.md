@@ -192,3 +192,19 @@ Maven Wrapper es un conjunto de archivos que se añaden a un proyecto de Maven p
 
 ## Maven Global Repositories
 Además de añadir repositorios en el pom.xml, también puedes configurar repositorios globales en el archivo settings.xml ubicado en el directorio ~/.m2/ (en Unix/Linux/Mac) o C:\Users\<tu-usuario>\.m2\ (en Windows). 
+
+## Goals Example
+- Build Lifecycle - CLEAN
+- Has only one goal -'clean'
+- Purpose is to remove files generated during build process.
+- By default removes /target directory project root and submodule root folders
+
+## Main Lifecycle Plugins
+
+- **Clean** plugin - Build Lifecycle CLEAN - goals 'clean' (cleans resources)
+- **Compiler** plugin - Build Lifecycle DEFAULT - goals 'compiler:compile', 'compiler:testCompile' 
+- **Resources** plugin - Build Lifecycle DEFAULT - goals 'resources:resources', 'resources:testResources', 'resources:copy-resources' (copy project resources to an outpur directory like /target)
+- **Surefire** plugin - Build Lifecycle DEFAULT - goals 'surefire:test' (Executes unit tests of the project)
+- **Jar** plugin - Build Lifecycle DEFAULT - goals 'jar:jar', 'jar:test-jar' (Build jars from compiles artifacts.
+- **Deploy** plugin - Build Lifecycle DEFAULT - goals 'deploy:deploy', 'deploy:deploy-file' (Deploy projecr artifacts to remote Maven repositories.
+- **Site** plugin - Build Lifecycle SITE - goals 'site:site', 'site:deploy', 'site:run', 'site:stage', 'site:stage-deploy', 'site:attach-descriptor',  'site:jar', 'site:effective-site' (Hase muchas cosas nose)
